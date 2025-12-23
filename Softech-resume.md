@@ -90,5 +90,5 @@ Apr 2021 – Sep 2021 · Remote
 ## Courses  
 
 - Version Control – Meta
-- Learn Markdown - Scrimba
+- Learn Markdown – Scrimba
 - General English Upper Advanced (CEFR Level C2) – EF SOLO  
