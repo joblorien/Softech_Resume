@@ -1,9 +1,13 @@
-document.querySelectorAll(".card").forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    card.style.transform = "scale(1.02)";
-  });
+document.querySelectorAll(".accordion-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const accordion = button.parentElement;
 
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "scale(1)";
+    document.querySelectorAll(".accordion").forEach(item => {
+      if (item !== accordion) {
+        item.classList.remove("open");
+      }
+    });
+
+    accordion.classList.toggle("open");
   });
 });
