@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Job Ryan | Technical Writer</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -18,14 +20,14 @@
       <h2>Technical Writer – Associate II</h2>
 
       <p class="contact">
-        📧 jobrider123@gmail.com |
-        📍 Bangalore |
+        📧 jobrider123@gmail.com &nbsp;|&nbsp;
+        📍 Bangalore &nbsp;|&nbsp;
         📞 +91 9704870370 <br>
         🔗 <a href="https://github.com/joblorien/Softech_portfolio" target="_blank">GitHub Portfolio</a>
       </p>
     </section>
 
-    <!-- PROFILE -->
+    <!-- PROFILE (VISIBLE ON LOAD) -->
     <section>
       <h3>Profile</h3>
       <p>
@@ -36,78 +38,163 @@
       </p>
     </section>
 
-    <!-- AWARDS -->
-    <section>
-      <h3>Performance Awards</h3>
-      <div class="card">
-        <strong>WOW Award – Capgemini</strong>
-        <p>
-          Recognized for quick cross-skilling, handling multiple technical documents,
-          proficiency in Tech Illustrator, peer reviews, backlog rework ownership,
-          and DHC logo sample preparation.
-        </p>
-      </div>
-    </section>
+    <!-- PERFORMANCE AWARDS -->
+    <div class="accordion">
+      <button class="accordion-btn">
+        Performance Awards
+        <span class="icon">+</span>
+      </button>
 
-    <!-- EXPERIENCE -->
-    <section>
-      <h3>Professional Experience</h3>
-
-      <div class="card">
-        <strong>Technical Writer – Associate II</strong>
-        <span>Capgemini | Nov 2023 – Present | Bangalore</span>
-        <ul>
-          <li>Authored and maintained 350+ XML-based documents (DITA compliant).</li>
-          <li>Translated engineering specs into clear user documentation.</li>
-          <li>Managed end-to-end documentation lifecycle.</li>
-          <li>Primary peer reviewer ensuring zero-defect deliverables.</li>
-          <li>Collaborated with engineers and SMEs.</li>
-        </ul>
+      <div class="accordion-content">
+        <div class="card">
+          <strong>WOW Award – Capgemini</strong>
+          <p>
+            Recognized for quick cross-skilling, handling multiple technical documents,
+            proficiency in Tech Illustrator, peer reviews, backlog rework ownership,
+            and DHC logo sample preparation.
+          </p>
+        </div>
       </div>
+    </div>
 
-      <div class="card">
-        <strong>Additional Contributions</strong>
-        <ul>
-          <li>Led vendor data recreation activities.</li>
-          <li>Improved CMS workflows independently.</li>
-          <li>Mentored 20+ team members.</li>
-        </ul>
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <div class="accordion">
+      <button class="accordion-btn">
+        Professional Experience
+        <span class="icon">+</span>
+      </button>
+
+      <div class="accordion-content">
+        <div class="card">
+          <strong>Technical Writer – Associate II</strong><br>
+          <span>Capgemini | Nov 2023 – Present | Bangalore</span>
+
+          <ul>
+            <li>Authored and maintained 350+ XML-based documents (DITA compliant).</li>
+            <li>Translated engineering specs into clear user documentation.</li>
+            <li>Managed end-to-end documentation lifecycle.</li>
+            <li>Primary peer reviewer ensuring zero-defect deliverables.</li>
+            <li>Collaborated with engineers and SMEs.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Additional Contributions</strong>
+          <ul>
+            <li>Led vendor data recreation activities.</li>
+            <li>Improved CMS workflows independently.</li>
+            <li>Mentored 20+ team members.</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- INTERNSHIPS -->
-    <section>
-      <h3>Internships</h3>
-      <ul>
-        <li><strong>Technical Writer</strong> – Capgemini (Apr 2023 – May 2023)</li>
-        <li><strong>Academic Support & Technical Writer</strong> – Sunali’s Classes (Apr 2021 – Sep 2021)</li>
-      </ul>
-    </section>
+    <div class="accordion">
+      <button class="accordion-btn">
+        Internships
+        <span class="icon">+</span>
+      </button>
+
+      <div class="accordion-content">
+        <div class="card">
+          <ul>
+            <li><strong>Technical Writer – Capgemini</strong> (Apr 2023 – May 2023)</li>
+            <li><strong>Academic Support & Technical Writer – Sunali’s Classes</strong> (Apr 2021 – Sep 2021)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- EDUCATION -->
-    <section>
-      <h3>Education</h3>
-      <p>
-        B.E. Aeronautical Engineering <br>
-        KCG College Of Technology – Anna University <br>
-        May 2019 – May 2023 | Chennai
-      </p>
-    </section>
+    <div class="accordion">
+      <button class="accordion-btn">
+        Education
+        <span class="icon">+</span>
+      </button>
+
+      <div class="accordion-content">
+        <div class="card">
+          <p>
+            <strong>B.E. Aeronautical Engineering</strong><br>
+            KCG College Of Technology – Anna University<br>
+            May 2019 – May 2023 | Chennai
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- SKILLS -->
-    <section>
-      <h3>Skills</h3>
+    <div class="accordion">
+      <button class="accordion-btn">
+        Skills
+        <span class="icon">+</span>
+      </button>
 
-      <div class="grid">
-        <div class="chip">Structured Authoring</div>
-        <div class="chip">DITA XML</div>
-        <div class="chip">Docs-as-Code</div>
-        <div class="chip">Markdown</div>
-        <div class="chip">HTML</div>
-        <div class="chip">Agile SDLC</div>
-        <div class="chip">Peer Review</div>
-        <div class="chip">Git / GitHub</div>
-        <div class="chip">Oxygen XML</div>
+      <div class="accordion-content">
+        <div class="grid">
+          <div class="chip">Structured Authoring</div>
+          <div class="chip">DITA XML</div>
+          <div class="chip">Docs-as-Code</div>
+          <div class="chip">Markdown</div>
+          <div class="chip">HTML</div>
+          <div class="chip">Agile SDLC</div>
+          <div class="chip">Peer Review</div>
+          <div class="chip">Git / GitHub</div>
+          <div class="chip">Oxygen XML</div>
+          <div class="chip">FrameMaker</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="accordion">
+      <button class="accordion-btn">
+        Portfolio – Salesforce CRM
+        <span class="icon">+</span>
+      </button>
+
+      <div class="accordion-content">
+        <div class="card">
+          <strong>Product Documentation</strong>
+          <p>High-level documentation explaining Salesforce CRM features and SaaS model.</p>
+        </div>
+
+        <div class="card">
+          <strong>SaaS User Guides</strong>
+          <p>Task-based modular guides covering onboarding, roles, lead management.</p>
+        </div>
+
+        <div class="card">
+          <strong>Help Center Articles</strong>
+          <p>Self-service help articles reducing support load.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURSES -->
+    <div class="accordion">
+      <button class="accordion-btn">
+        Courses & Certifications
+        <span class="icon">+</span>
+      </button>
+
+      <div class="accordion-content">
+        <div class="card">
+          <ul>
+            <li>Version Control – Meta</li>
+            <li>Learn Markdown – Scrimba</li>
+            <li>General English Upper Advanced (CEFR C2) – EF SOLO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>        <div class="chip">Oxygen XML</div>
         <div class="chip">FrameMaker</div>
       </div>
     </section>
