@@ -27,7 +27,7 @@
       </p>
     </section>
 
-    <!-- PROFILE (VISIBLE ON LOAD) -->
+    <!-- PROFILE -->
     <section>
       <h3>Profile</h3>
       <p>
@@ -38,14 +38,21 @@
       </p>
     </section>
 
-    <!-- PERFORMANCE AWARDS -->
-    <div class="accordion">
-      <button class="accordion-btn">
-        Performance Awards
-        <span class="icon">+</span>
-      </button>
+    <!-- TOPIC STRIP -->
+    <div class="topic-strip" id="topicStrip">
+      <button class="topic-pill active" data-target="awards">Performance Awards <span>＋</span></button>
+      <button class="topic-pill" data-target="experience">Professional Experience <span>＋</span></button>
+      <button class="topic-pill" data-target="internships">Internships <span>＋</span></button>
+      <button class="topic-pill" data-target="education">Education <span>＋</span></button>
+      <button class="topic-pill" data-target="skills">Skills <span>＋</span></button>
+      <button class="topic-pill" data-target="portfolio">Portfolio – Salesforce CRM <span>＋</span></button>
+      <button class="topic-pill" data-target="courses">Courses & Certifications <span>＋</span></button>
+    </div>
 
-      <div class="accordion-content">
+    <!-- CONTENT -->
+    <div class="topic-content">
+
+      <div class="topic-section active" id="awards">
         <div class="card">
           <strong>WOW Award – Capgemini</strong>
           <p>
@@ -55,20 +62,11 @@
           </p>
         </div>
       </div>
-    </div>
 
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <div class="accordion">
-      <button class="accordion-btn">
-        Professional Experience
-        <span class="icon">+</span>
-      </button>
-
-      <div class="accordion-content">
+      <div class="topic-section" id="experience">
         <div class="card">
           <strong>Technical Writer – Associate II</strong><br>
           <span>Capgemini | Nov 2023 – Present | Bangalore</span>
-
           <ul>
             <li>Authored and maintained 350+ XML-based documents (DITA compliant).</li>
             <li>Translated engineering specs into clear user documentation.</li>
@@ -87,16 +85,8 @@
           </ul>
         </div>
       </div>
-    </div>
 
-    <!-- INTERNSHIPS -->
-    <div class="accordion">
-      <button class="accordion-btn">
-        Internships
-        <span class="icon">+</span>
-      </button>
-
-      <div class="accordion-content">
+      <div class="topic-section" id="internships">
         <div class="card">
           <ul>
             <li><strong>Technical Writer – Capgemini</strong> (Apr 2023 – May 2023)</li>
@@ -104,10 +94,62 @@
           </ul>
         </div>
       </div>
+
+      <div class="topic-section" id="education">
+        <div class="card">
+          <strong>B.E. Aeronautical Engineering</strong><br>
+          KCG College Of Technology – Anna University<br>
+          May 2019 – May 2023 | Chennai
+        </div>
+      </div>
+
+      <div class="topic-section" id="skills">
+        <div class="grid">
+          <div class="chip">Structured Authoring</div>
+          <div class="chip">DITA XML</div>
+          <div class="chip">Docs-as-Code</div>
+          <div class="chip">Markdown</div>
+          <div class="chip">HTML</div>
+          <div class="chip">Agile SDLC</div>
+          <div class="chip">Peer Review</div>
+          <div class="chip">Git / GitHub</div>
+          <div class="chip">Oxygen XML</div>
+          <div class="chip">FrameMaker</div>
+        </div>
+      </div>
+
+      <div class="topic-section" id="portfolio">
+        <div class="card">
+          <strong>Product Documentation</strong>
+          <p>High-level documentation explaining Salesforce CRM features and SaaS model.</p>
+        </div>
+        <div class="card">
+          <strong>SaaS User Guides</strong>
+          <p>Task-based modular guides covering onboarding, roles, lead management.</p>
+        </div>
+        <div class="card">
+          <strong>Help Center Articles</strong>
+          <p>Self-service help articles reducing support load.</p>
+        </div>
+      </div>
+
+      <div class="topic-section" id="courses">
+        <div class="card">
+          <ul>
+            <li>Version Control – Meta</li>
+            <li>Learn Markdown – Scrimba</li>
+            <li>General English Upper Advanced (CEFR C2) – EF SOLO</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
-    <!-- EDUCATION -->
-    <div class="accordion">
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>    <div class="accordion">
       <button class="accordion-btn">
         Education
         <span class="icon">+</span>
