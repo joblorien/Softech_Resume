@@ -15,7 +15,7 @@
   <main class="glass-card">
 
     <!-- HEADER -->
-    <section class="header">
+    <section class="header center">
       <h1>JOB RYAN</h1>
       <h2>Technical Writer – Associate II</h2>
 
@@ -28,51 +28,54 @@
     </section>
 
     <!-- PROFILE -->
-    <section>
-      <h3>Profile</h3>
-      <p>
-        Detail-oriented Technical Writer with 2+ years of experience creating clear,
-        user-focused documentation for complex systems and products.
-        Strong professional English and technical communication skills with experience
-        in structured authoring, Agile workflows, and cross-functional collaboration.
-      </p>
+    <section class="profile-grid">
+      <div class="profile-box">
+        <h3>Professional Summary</h3>
+        <p>
+          Detail-oriented Technical Writer with 2+ years of experience creating clear,
+          user-focused documentation for complex systems and products.
+        </p>
+      </div>
+
+      <div class="profile-box">
+        <h3>Core Strengths</h3>
+        <p>
+          Strong professional English and technical communication skills with experience
+          in structured authoring, Agile workflows, and cross-functional collaboration.
+        </p>
+      </div>
     </section>
 
-    <!-- TOPIC STRIP -->
-    <div class="topic-strip" id="topicStrip">
-      <button class="topic-pill active" data-target="awards">Performance Awards <span>＋</span></button>
-      <button class="topic-pill" data-target="experience">Professional Experience <span>＋</span></button>
-      <button class="topic-pill" data-target="internships">Internships <span>＋</span></button>
-      <button class="topic-pill" data-target="education">Education <span>＋</span></button>
-      <button class="topic-pill" data-target="skills">Skills <span>＋</span></button>
-      <button class="topic-pill" data-target="portfolio">Portfolio – Salesforce CRM <span>＋</span></button>
-      <button class="topic-pill" data-target="courses">Courses & Certifications <span>＋</span></button>
+    <!-- TOPIC BAR WITH ARROWS -->
+    <div class="topic-wrapper">
+      <button class="arrow left" id="leftArrow">❮</button>
+
+      <div class="topic-strip" id="topicStrip">
+        <button class="topic-pill active" data-target="experience">Professional Experience</button>
+        <button class="topic-pill" data-target="internships">Internships</button>
+        <button class="topic-pill" data-target="education">Education</button>
+        <button class="topic-pill" data-target="skills">Skills</button>
+        <button class="topic-pill" data-target="portfolio">Portfolio – Salesforce CRM</button>
+        <button class="topic-pill" data-target="courses">Courses & Certifications</button>
+      </div>
+
+      <button class="arrow right" id="rightArrow">❯</button>
     </div>
 
     <!-- CONTENT -->
-    <div class="topic-content">
+    <section class="content-area">
 
-      <div class="topic-section active" id="awards">
-        <div class="card">
-          <strong>WOW Award – Capgemini</strong>
-          <p>
-            Recognized for quick cross-skilling, handling multiple technical documents,
-            proficiency in Tech Illustrator, peer reviews, backlog rework ownership,
-            and DHC logo sample preparation.
-          </p>
-        </div>
-      </div>
-
-      <div class="topic-section" id="experience">
+      <!-- EXPERIENCE -->
+      <div class="topic-section active" id="experience">
         <div class="card">
           <strong>Technical Writer – Associate II</strong><br>
           <span>Capgemini | Nov 2023 – Present | Bangalore</span>
           <ul>
             <li>Authored and maintained 350+ XML-based documents (DITA compliant).</li>
-            <li>Translated engineering specs into clear user documentation.</li>
+            <li>Translated engineering specifications into clear, user-focused documentation.</li>
             <li>Managed end-to-end documentation lifecycle.</li>
             <li>Primary peer reviewer ensuring zero-defect deliverables.</li>
-            <li>Collaborated with engineers and SMEs.</li>
+            <li>Collaborated with engineers and Subject Matter Experts.</li>
           </ul>
         </div>
 
@@ -86,6 +89,7 @@
         </div>
       </div>
 
+      <!-- INTERNSHIPS -->
       <div class="topic-section" id="internships">
         <div class="card">
           <ul>
@@ -95,29 +99,32 @@
         </div>
       </div>
 
+      <!-- EDUCATION -->
       <div class="topic-section" id="education">
         <div class="card">
           <strong>B.E. Aeronautical Engineering</strong><br>
-          KCG College Of Technology – Anna University<br>
+          KCG College of Technology – Anna University<br>
           May 2019 – May 2023 | Chennai
         </div>
       </div>
 
+      <!-- SKILLS -->
       <div class="topic-section" id="skills">
-        <div class="grid">
-          <div class="chip">Structured Authoring</div>
-          <div class="chip">DITA XML</div>
-          <div class="chip">Docs-as-Code</div>
-          <div class="chip">Markdown</div>
-          <div class="chip">HTML</div>
-          <div class="chip">Agile SDLC</div>
-          <div class="chip">Peer Review</div>
-          <div class="chip">Git / GitHub</div>
-          <div class="chip">Oxygen XML</div>
-          <div class="chip">FrameMaker</div>
+        <div class="chip-grid">
+          <span>Structured Authoring</span>
+          <span>DITA XML</span>
+          <span>Docs-as-Code</span>
+          <span>Markdown</span>
+          <span>HTML</span>
+          <span>Agile SDLC</span>
+          <span>Peer Review</span>
+          <span>Git / GitHub</span>
+          <span>Oxygen XML</span>
+          <span>FrameMaker</span>
         </div>
       </div>
 
+      <!-- PORTFOLIO -->
       <div class="topic-section" id="portfolio">
         <div class="card">
           <strong>Product Documentation</strong>
@@ -125,7 +132,7 @@
         </div>
         <div class="card">
           <strong>SaaS User Guides</strong>
-          <p>Task-based modular guides covering onboarding, roles, lead management.</p>
+          <p>Task-based modular guides covering onboarding, roles, and lead management.</p>
         </div>
         <div class="card">
           <strong>Help Center Articles</strong>
@@ -133,6 +140,7 @@
         </div>
       </div>
 
+      <!-- COURSES -->
       <div class="topic-section" id="courses">
         <div class="card">
           <ul>
@@ -143,6 +151,13 @@
         </div>
       </div>
 
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
     </div>
 
   </main>
