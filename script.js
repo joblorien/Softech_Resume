@@ -1,10 +1,9 @@
-const blur = document.getElementById('cursor-blur');
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "scale(1.02)";
+  });
 
-document.addEventListener('mousemove', (e) => {
-    // Moves a glowing blue light behind the glass container
-    blur.style.transform = `translate(${e.clientX - 150}px, ${e.clientY - 150}px)`;
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+  });
 });
-
-// Add a typing effect for your profile summary
-const profileText = "Detail-oriented Technical Writer with 2+ years of experience..."; [span_9](start_span)//[span_9](end_span)
-
