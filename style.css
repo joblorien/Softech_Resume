@@ -11,36 +11,45 @@ body {
   min-height: 100vh;
 }
 
+/* ==== BACKGROUND GLOW ==== */
 .bg-glow {
   position: fixed;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, #1e90ff55, transparent 70%);
-  top: -250px;
-  left: -250px;
-  filter: blur(90px);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(30,144,255,0.35), transparent 70%);
+  top: -200px;
+  left: -200px;
+  filter: blur(80px);
   z-index: -1;
 }
 
+/* ==== MAIN GLASS CARD ==== */
 .glass-card {
   max-width: 900px;
-  margin: 60px auto;
-  padding: 40px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 24px;
-  backdrop-filter: blur(22px);
-  box-shadow: 0 0 45px #1e90ff33;
+  margin: 50px auto;
+  padding: 36px;
+  background: rgba(10, 18, 32, 0.85); /* fallback */
+  border-radius: 22px;
+
+  /* glass effect */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 0 35px rgba(30,144,255,0.25),
+    inset 0 0 25px rgba(255,255,255,0.04);
 }
 
+/* ==== HEADER ==== */
 .header h1 {
-  font-size: 42px;
+  font-size: 40px;
   color: #4da6ff;
-  text-shadow: 0 0 15px #4da6ff;
+  text-shadow: 0 0 12px rgba(77,166,255,0.9);
 }
 
 .header h2 {
   font-weight: 300;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .contact a {
@@ -48,50 +57,59 @@ body {
   text-decoration: none;
 }
 
+/* ==== SECTIONS ==== */
 section {
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 h3 {
   color: #4da6ff;
-  margin-bottom: 12px;
-  text-shadow: 0 0 8px #4da6ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(77,166,255,0.8);
 }
 
+/* ==== ACCORDION ==== */
 .accordion {
   margin-top: 22px;
 }
 
 .accordion-btn {
   width: 100%;
-  padding: 16px 20px;
-  border-radius: 16px;
+  padding: 15px 18px;
+  border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.07);
-  backdrop-filter: blur(18px);
+
+  background: rgba(20, 30, 50, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
   color: #4da6ff;
   font-size: 16px;
   text-align: left;
   cursor: pointer;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   box-shadow:
-    inset 0 0 20px rgba(30,144,255,0.15),
-    0 8px 30px rgba(0,0,0,0.4);
-  transition: all 0.35s ease;
+    inset 0 0 12px rgba(30,144,255,0.18),
+    0 6px 18px rgba(0,0,0,0.45);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .accordion-btn:active {
   transform: scale(0.97);
 }
 
+/* ==== ACCORDION CONTENT ==== */
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transform: translateY(-8px);
-  transition: all 0.45s ease;
+  transform: translateY(-6px);
+  transition: all 0.4s ease;
 }
 
 .accordion.open .accordion-content {
@@ -100,6 +118,7 @@ h3 {
   transform: translateY(0);
 }
 
+/* ==== ICON ==== */
 .icon {
   font-size: 22px;
   transition: transform 0.3s ease;
@@ -109,24 +128,30 @@ h3 {
   transform: rotate(45deg);
 }
 
+/* ==== CARDS ==== */
 .card {
-  background: rgba(255,255,255,0.08);
-  padding: 20px;
+  background: rgba(255,255,255,0.06);
+  padding: 18px;
   border-radius: 14px;
-  margin-top: 15px;
-  box-shadow: inset 0 0 15px #1e90ff22;
-  animation: fadeUp 0.5s ease forwards;
+  margin-top: 14px;
+
+  box-shadow:
+    inset 0 0 14px rgba(30,144,255,0.18);
+
+  animation: fadeUp 0.45s ease forwards;
 }
 
+/* ==== LISTS ==== */
 ul {
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 li {
   margin-bottom: 8px;
 }
 
+/* ==== SKILL CHIPS ==== */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -134,15 +159,23 @@ li {
 }
 
 .chip {
-  padding: 8px 14px;
-  border-radius: 20px;
-  background: rgba(30,144,255,0.2);
-  box-shadow: 0 0 10px #1e90ff55;
+  padding: 7px 14px;
+  border-radius: 18px;
+  background: rgba(30,144,255,0.22);
+  box-shadow: 0 0 8px rgba(30,144,255,0.6);
 }
 
+/* ==== ANIMATION ==== */
 @keyframes fadeUp {
   from {
     opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}    opacity: 0;
     transform: translateY(12px);
   }
   to {
