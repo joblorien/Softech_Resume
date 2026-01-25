@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>Job Ryan | Technical Writer</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -46,8 +46,8 @@
       <button type="button" class="arrow right" id="rightArrow">❯</button>
     </div>
 
-    <section class="content-area">
-      <div class="topic-section active" id="experience">
+    <section class="content-area" id="mainContent">
+      <div class="topic-section active" id="experience" aria-hidden="false">
         <div class="card">
           <strong>Technical Writer – Associate II</strong><br>
           <span>Capgemini | Nov 2023 – Present | Bangalore</span>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="topic-section" id="internships">
+      <div class="topic-section" id="internships" aria-hidden="true" style="display: none;">
         <div class="card">
           <ul>
             <li><strong>Technical Writer – Capgemini</strong> (Apr 2023 – May 2023)</li>
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="topic-section" id="education">
+      <div class="topic-section" id="education" aria-hidden="true" style="display: none;">
         <div class="card">
           <strong>B.E. Aeronautical Engineering</strong><br>
           KCG College of Technology – Anna University<br>
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="topic-section" id="skills">
+      <div class="topic-section" id="skills" aria-hidden="true" style="display: none;">
         <div class="chip-grid">
           <span>Structured Authoring</span><span>DITA XML</span><span>Docs-as-Code</span>
           <span>Markdown</span><span>HTML</span><span>Agile SDLC</span>
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <div class="topic-section" id="portfolio">
+      <div class="topic-section" id="portfolio" aria-hidden="true" style="display: none;">
         <div class="card">
           <strong>Product Documentation</strong>
           <p>High-level documentation explaining Salesforce CRM features and SaaS model.</p>
@@ -107,6 +107,23 @@
           <strong>Help Center Articles</strong>
           <p>Self-service help articles reducing support load.</p>
         </div>
+      </div>
+
+      <div class="topic-section" id="courses" aria-hidden="true" style="display: none;">
+        <div class="card">
+          <ul>
+            <li>Version Control – Meta</li>
+            <li>Learn Markdown – Scrimba</li>
+            <li>General English Upper Advanced (CEFR C2) – EF SOLO</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
       </div>
 
       <div class="topic-section" id="courses">
